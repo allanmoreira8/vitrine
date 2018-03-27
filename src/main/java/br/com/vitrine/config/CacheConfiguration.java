@@ -46,6 +46,7 @@ public class CacheConfiguration {
             cm.createCache(br.com.vitrine.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.vitrine.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(br.com.vitrine.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.vitrine.domain.Produto.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
