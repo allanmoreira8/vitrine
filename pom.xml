@@ -102,6 +102,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
+            <exclusions>
+		        <exclusion>
+		            <artifactId>hibernate-entitymanager</artifactId>
+		            <groupId>org.hibernate</groupId>
+		        </exclusion>
+		    </exclusions>
         </dependency>
         <dependency>
             <groupId>io.github.jhipster</groupId>
@@ -376,6 +382,11 @@
             <scope>test</scope>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+	    </dependency>
+
     </dependencies>
 
     <build>
